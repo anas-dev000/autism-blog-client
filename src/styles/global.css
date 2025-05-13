@@ -1,0 +1,85 @@
+:root {
+  --primary-color: #0057b8;
+  --secondary-color: #f5f8ff;
+  --accent-color: #003087;
+  --text-color: #1a2a44;
+  --gradient-blue: linear-gradient(to right, #0057b8, #003087);
+}
+
+body {
+  font-family: "Cairo", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  direction: rtl;
+  text-align: right;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+  padding-top: 100px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logos-wrapper {
+  width: 100%;
+  padding: 0 30px;
+  margin: 1.5rem 0;
+}
+
+.logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 140px;
+  height: auto;
+}
+
+.site-title {
+  font-size: 2.5rem;
+  margin-top: 1rem;
+  text-align: center;
+  background: var(--gradient-blue);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.intro-text {
+  max-width: 750px;
+  margin: 1rem auto;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  text-align: center;
+}
+
+.outro-text {
+  max-width: 750px;
+  margin: 2rem auto 0;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  text-align: center;
+  font-style: italic;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  background: var(--gradient-blue);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

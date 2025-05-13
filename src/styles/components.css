@@ -1,0 +1,510 @@
+.navbar {
+  background-color: var(--primary-color);
+  padding: 5px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  direction: rtl;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo span {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: white;
+}
+
+.edraak-logo {
+  width: auto;
+  height: 50px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--accent-color);
+}
+
+.footer {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  margin: 2rem auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  will-change: transform, opacity;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.age-card,
+.game-card,
+.communication-image-card,
+.team-member {
+  max-width: 300px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.blog-post,
+.podcast-card,
+.video-card,
+.communication-text-card,
+.about-card,
+.detailed-age-card {
+  max-width: 1000px;
+}
+
+.age-card img,
+.blog-image,
+.game-image,
+.communication-image {
+  width: 100%;
+  max-width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin: 1rem auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.blog-image {
+  max-width: 600px;
+  max-height: 400px;
+  object-fit: contain;
+}
+
+.age-card img:hover,
+.blog-image:hover,
+.game-image:hover,
+.communication-image:hover {
+  transform: scale(1.05);
+}
+
+.age-card h3,
+.age-card ul {
+  margin-top: 1rem;
+}
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+  margin: 20px auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.booking-form input,
+.booking-form button {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid var(--primary-color);
+  font-family: "Cairo", sans-serif;
+}
+
+.booking-form button {
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.booking-form button:hover {
+  background-color: #c0392b;
+}
+
+.section-subtitle {
+  font-size: 2rem;
+  color: var(--text-color);
+  text-align: center;
+  margin: 2rem 0 1rem;
+  font-weight: 600;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1200px;
+  justify-content: center;
+}
+
+.services-grid {
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  justify-items: center;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.videos-grid {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.podcasts-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.podcast-video {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  max-width: 1000px;
+}
+
+.podcast-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  max-width: 800px;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.features-images {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 20px;
+  position: relative;
+}
+
+.features-images .slick-slide {
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.features-images img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  max-height: 400px;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  display: block;
+}
+
+.features-images .slick-slide:hover img {
+  transform: scale(1.05);
+}
+
+.slick-prev,
+.slick-next {
+  width: 50px;
+  height: 50px;
+  background-color: var(--primary-color);
+  border: 2px solid var(--accent-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  transition: background-color 0.3s ease;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  background-color: var(--accent-color);
+}
+
+.slick-prev {
+  left: -30px;
+}
+
+.slick-next {
+  right: -30px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 24px;
+  color: white;
+}
+
+.slick-dots {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.slick-dots li {
+  margin: 0 8px;
+}
+
+.slick-dots li button:before {
+  font-size: 14px;
+  color: var(--primary-color);
+  opacity: 0.5;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 1;
+}
+
+.home-header {
+  margin-top: 80px;
+  opacity: 0;
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+.podcast-title,
+.video-title,
+.game-title {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.podcast-description,
+.game-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  max-width: 800px;
+}
+
+.team-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  aspect-ratio: 1/1;
+}
+
+.team-name {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.4;
+  word-wrap: break-word;
+}
+
+.game-link,
+.service-button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+}
+
+.service-button {
+  width: 180px;
+  text-align: center;
+}
+
+.game-link:hover,
+.service-button:hover {
+  background-color: var(--accent-color);
+  transform: translateY(-2px);
+}
+
+.game-link.disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.disabled-link {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.detailed-age-list,
+.age-card-list {
+  list-style-position: outside;
+  padding-right: 1.5rem;
+  direction: rtl;
+  text-align: right;
+}
+
+.about-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 1024px) {
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+
+  .team-member {
+    max-width: 180px;
+  }
+
+  .team-avatar {
+    width: 70px;
+    height: 70px;
+  }
+
+  .team-name {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2.2rem;
+  }
+
+  .section-subtitle {
+    font-size: 1.6rem;
+  }
+
+  .intro-text {
+    font-size: 1.1rem;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
+
+  .team-member {
+    max-width: 160px;
+  }
+
+  .team-avatar {
+    width: 60px;
+    height: 60px;
+  }
+
+  .team-name {
+    font-size: 0.9rem;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  }
+
+  .service-button {
+    width: 160px;
+  }
+}
+
+@media (max-width: 480px) {
+  .team-grid {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .team-member {
+    max-width: 200px;
+    margin: 0 auto;
+  }
+
+  .team-avatar {
+    width: 60px;
+    height: 60px;
+  }
+
+  .team-name {
+    font-size: 0.85rem;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-button {
+    width: 100%;
+    max-width: 200px;
+  }
+}
